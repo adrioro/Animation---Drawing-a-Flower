@@ -1,12 +1,15 @@
 import turtle
 
 angie = turtle.Turtle()
-angie.shape("arrow")
+angie.shape("circle")
 angie.color("red")
 angie.speed(18)
-angie.pencolor("green")
+angie.pencolor("black")
+angie.pensize(2) 
 angie.begin_fill()
 angie.end_fill()
+
+# Draw petals
 
 angie.penup()
 angie.position()
@@ -67,32 +70,27 @@ angie.circle(100)
 angie.end_fill()
 angie.penup()
 
-#Draw central circle
+# Draw central circle
 
 angie.setpos(0,60)
 angie.pendown()
 angie.color("yellow")
+angie.pencolor("blue")
+angie.pensize(5) 
 angie.begin_fill()
 angie.circle(40)
 angie.end_fill()
 angie.penup()
 
 
-#Draw vertical line
-angie.setpos(0,-350)
-angie.pendown()
-angie.circle(5)
+# Draw vertical green line
 
-#Invisible
+angie.setpos(0,-200)
+angie.color("darkgreen")
+angie.pensize(22)
+angie.pendown()
+angie.setpos(0,-350)
 angie.penup()
-angie.shape("arrow")
-angie.color("gray")
-angie.forward(30)
 
 angie.end_fill()
-
-
-
-
-
 
